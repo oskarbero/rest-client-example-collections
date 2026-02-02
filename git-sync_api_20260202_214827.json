@@ -3,7 +3,7 @@
   "name": "Git-sync api",
   "type": "collection",
   "createdAt": "2026-01-27T22:08:45.013Z",
-  "updatedAt": "2026-02-02T21:48:18.863Z",
+  "updatedAt": "2026-02-02T21:48:28.583Z",
   "settings": {
     "baseUrl": "{{dummy_api}}",
     "auth": {
@@ -19,7 +19,7 @@
       "name": "auth/me 2",
       "type": "request",
       "createdAt": "2026-01-27T22:08:49.501Z",
-      "updatedAt": "2026-01-29T18:59:44.238Z",
+      "updatedAt": "2026-02-02T21:53:49.072Z",
       "request": {
         "url": "/auth/me",
         "method": "GET",
@@ -31,7 +31,7 @@
           },
           {
             "key": "Authorization",
-            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3Njk3MTMxNjcsImV4cCI6MTc2OTcxNDk2N30.1ixRQsbodQBx1Hdwjz1OoadNBbTPOjBgh8BubUtteQw",
+            "value": "Bearer {{TOKEN}}",
             "enabled": true
           }
         ],
@@ -44,7 +44,7 @@
           "type": "bearer",
           "disableInherit": true,
           "bearer": {
-            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3Njk3MTMxNjcsImV4cCI6MTc2OTcxNDk2N30.1ixRQsbodQBx1Hdwjz1OoadNBbTPOjBgh8BubUtteQw"
+            "token": "{{TOKEN}}"
           }
         },
         "operationId": "get_current_auth_user"
