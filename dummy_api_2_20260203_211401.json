@@ -1,0 +1,116 @@
+{
+  "id": "node_1769552678621_i1yk5i5",
+  "name": "Dummy api 2",
+  "type": "collection",
+  "createdAt": "2026-01-27T22:24:38.621Z",
+  "updatedAt": "2026-02-03T21:14:00.429Z",
+  "settings": {
+    "baseUrl": "{{dummy_api}}"
+  },
+  "children": [
+    {
+      "id": "node_1769552678621_zsr0oxf",
+      "name": "auth_me",
+      "type": "request",
+      "createdAt": "2026-01-27T22:24:38.621Z",
+      "updatedAt": "2026-02-03T21:13:53.385Z",
+      "request": {
+        "url": "/auth/me",
+        "method": "GET",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "",
+            "enabled": false
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer 123467abc",
+            "enabled": true
+          }
+        ],
+        "queryParams": [],
+        "body": {
+          "type": "none",
+          "content": ""
+        },
+        "auth": {
+          "type": "bearer",
+          "disableInherit": true,
+          "bearer": {
+            "token": "123467abc"
+          }
+        }
+      }
+    },
+    {
+      "id": "node_1769552678621_fsu7we7",
+      "name": "login_get_token_3",
+      "type": "request",
+      "createdAt": "2026-01-27T22:24:38.621Z",
+      "updatedAt": "2026-01-27T22:24:38.621Z",
+      "request": {
+        "url": "/auth/login",
+        "method": "POST",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "",
+            "enabled": true
+          }
+        ],
+        "queryParams": [],
+        "body": {
+          "type": "json",
+          "content": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"username\": {\n      \"type\": \"string\"\n    },\n    \"password\": {\n      \"type\": \"string\"\n    },\n    \"expiresInMins\": {\n      \"type\": \"number\"\n    }\n  },\n  \"required\": [\n    \"username\",\n    \"password\",\n    \"expiresInMins\"\n  ]\n}"
+        },
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "node_1769552678621_zbs2wsb",
+      "name": "abcd",
+      "type": "request",
+      "createdAt": "2026-01-27T22:24:38.621Z",
+      "updatedAt": "2026-01-27T22:24:38.621Z",
+      "request": {
+        "url": "/auth/fake",
+        "method": "PUT",
+        "headers": [],
+        "queryParams": [],
+        "body": {
+          "type": "none",
+          "content": ""
+        },
+        "auth": {
+          "type": "none"
+        }
+      }
+    },
+    {
+      "id": "node_1769552678621_knh25vf",
+      "name": "test_request",
+      "type": "request",
+      "createdAt": "2026-01-27T22:24:38.621Z",
+      "updatedAt": "2026-01-27T22:24:38.621Z",
+      "request": {
+        "url": "patch",
+        "method": "PATCH",
+        "headers": [],
+        "queryParams": [],
+        "body": {
+          "type": "none",
+          "content": ""
+        },
+        "auth": {
+          "type": "none"
+        }
+      }
+    }
+  ]
+}
